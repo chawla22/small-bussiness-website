@@ -93,7 +93,7 @@ a:focus, button:focus {
 /* Styling the hero section */
 
 .hero {
-  background: url('images/pizza.avif') no-repeat center center/cover; 
+  background: url('https://images.unsplash.com/photo-1506354666786-959d6d497f1a?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover; 
   color: white;
   padding: 6rem 2rem;
   text-align: center;
