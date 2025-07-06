@@ -109,7 +109,7 @@ a:focus, button:focus {
   margin-bottom: 2rem;
 }
 
-/* styled the CTA */
+/* styled the CTA section */
 
 #cta-btn {
   padding: 0.75rem 1.5rem;
@@ -148,11 +148,60 @@ a:focus, button:focus {
 }
 
 
-
 footer {
   text-align: center;
   padding: 1.5rem;
   background: #388e3c;
   color: white;
   margin: 0;
+}
+
+
+
+/* Ensuring mobile responsivness  */
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 60px 15px;
+    background-position: center;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  /* Services stack vertically */
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  /* Responsive CTA button */
+  #cta-btn {
+    font-size: 1em;
+    padding: 12px 20px;
+  }
 }
