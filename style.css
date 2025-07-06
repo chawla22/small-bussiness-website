@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4caf50;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  position: relative;
+}
+
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#nav-links li a:hover {
+  color: #00ff37;
+}
+
+
+.hero {
+  background: url('images/pizza.avif') no-repeat center center/cover; 
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#cta-btn {
+  padding: 0.75rem 1.5rem;
+  background: #ff9800;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+#update-headline {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#headline-input {
+  padding: 0.5rem;
+  width: 250px;
+  margin-right: 0.5rem;
+}
+
+#update-button {
+  padding: 0.5rem 1rem;
+  background-color: #66bb6a;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#update-button:hover {
+  background-color: #558b2f;
+}
+
+#services {
+  margin-bottom: 2rem;
+}
+
+.services-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.service {
+  flex: 1 1 200px;
+  padding: 1rem;
+  background: #e8f5e9;
+  border: 1px solid #c5e1a5;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.service:hover {
+  transform: scale(1.05);
+  background: #dcedc8;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #388e3c;
+  color: white;
+  margin: 0;
+}
+
+  
+a:focus, button:focus {
+  outline: 2px dashed #00ff37;
+  outline-offset: 3px;
+}
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 60px 15px;
+    background-position: center;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  /* Services stack vertically */
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  /* Responsive CTA button */
+  #cta-btn {
+    font-size: 1em;
+    padding: 12px 20px;
+  }
+}
+
