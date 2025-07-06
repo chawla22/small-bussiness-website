@@ -25,6 +25,27 @@ header {
   font-weight: bold;
 }
 
+/* stylying the navigation links */
+nav {
+  position: relative;
+}
+
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#nav-links li a:hover {
+  color: #00ff37;
+}
 
 footer {
   text-align: center;
