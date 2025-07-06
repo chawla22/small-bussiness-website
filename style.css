@@ -99,15 +99,21 @@ a:focus, button:focus {
   text-align: center;
 }
 
+
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #ffff33; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #ffffff; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
+
 
 /* styled the CTA section */
 
@@ -205,3 +211,8 @@ footer {
     padding: 12px 20px;
   }
 }
+
+
+
+
+
